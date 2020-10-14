@@ -1,0 +1,15 @@
+
+spring:
+  application:
+    name: nacos-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848   #注册地址
+management:
+  endpoints:
+    web:
+      exposure:
+        exclude:  '*'    #暴露出去
+server:
+  port: 9002
